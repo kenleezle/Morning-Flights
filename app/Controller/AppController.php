@@ -25,7 +25,9 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
         public $components = array(
            'DebugKit.Toolbar',
-           "Session",
+           "Session"
+           /* This shit sucks!
+           ,
            'Auth' => array(
              'flash' => array(
                'element' => 'alert',
@@ -36,6 +38,7 @@ class AppController extends Controller {
                )
              )
            )
+           */
         );
         public $helpers = array(
           'Session',
