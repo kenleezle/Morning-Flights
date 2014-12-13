@@ -30,11 +30,11 @@ if (function_exists('ini_set')) {
 
 	// the following lines differ from its sibling
 	// /app/Console/cake.php
-	if (file_exists($composerInstall . DS . $dispatcher)) {
-		$install = $composerInstall;
-	} elseif (!file_exists($install . DS . $dispatcher)) {
-		$install = $root . PATH_SEPARATOR . 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . 'morningflights' . DS . 'cakephp' . DS . 'lib';
-	}
+	// if (file_exists($composerInstall . DS . $dispatcher)) {
+	// 	$install = $composerInstall;
+	// } elseif (!file_exists($install . DS . $dispatcher)) {
+	// 	$install = $root . PATH_SEPARATOR . 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . 'morningflights' . DS . 'cakephp' . DS . 'lib';
+	// }
 
 	ini_set('include_path', $install . PATH_SEPARATOR . ini_get('include_path'));
 	unset($root, $appDir, $install, $composerInstall);
